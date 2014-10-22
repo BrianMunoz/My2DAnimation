@@ -9,19 +9,56 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic) IBOutlet UIView *viewToAnimate;
+@property (nonatomic) IBOutlet UIView *otherViewToAnimate;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [UIView animateWithDuration:2.0
+                          delay:0.0
+                        options:UIViewAnimationOptionAutoreverse |
+     UIViewAnimationOptionRepeat
+                     animations:^{
+                         self.viewToAnimate.center = CGPointMake(0.0f, 0);
+                     }
+                     completion:^(BOOL finished) {
+                     }];
+    
+    [UIView animateWithDuration:3.0
+                          delay:0.0
+                        options:UIViewAnimationOptionAutoreverse |
+     UIViewAnimationOptionRepeat
+                     animations:^{
+                         self.otherViewToAnimate.center = CGPointMake(0.0f, 0);
+                         self.otherViewToAnimate.alpha = 0.0f;
+                     }
+                     completion:^(BOOL finished) {
+                     }];
+    
+    
+    [UIView animateWithDuration:5.0
+                          delay:0.0
+                        options:UIViewAnimationOptionAutoreverse |
+     UIViewAnimationOptionRepeat
+                     animations:^{
+                         self.otherViewToAnimate.center = CGPointMake(0.0f, 0);
+                         self.otherViewToAnimate.transform =
+                         CGAffineTransformMakeRotation(M_PI / 2.0);
+                     }
+                     completion:^(BOOL finished) {
+                     }];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

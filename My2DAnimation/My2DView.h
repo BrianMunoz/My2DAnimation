@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  My2DView.h
 //  My2DAnimation
 //
 //  Created by Brian Munoz on 10/22/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface My2DView : UIView
 
 @end
-

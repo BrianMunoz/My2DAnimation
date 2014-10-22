@@ -14,6 +14,7 @@
 		8B8AC5D919F857ED009DB675 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8AC5D819F857ED009DB675 /* Images.xcassets */; };
 		8B8AC5DC19F857ED009DB675 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8AC5DA19F857ED009DB675 /* LaunchScreen.xib */; };
 		8B8AC5E819F857ED009DB675 /* My2DAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC5E719F857ED009DB675 /* My2DAnimationTests.m */; };
+		8B8AC5F619F85A34009DB675 /* My2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC5F519F85A34009DB675 /* My2DView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8B8AC5E119F857ED009DB675 /* My2DAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My2DAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8AC5E619F857ED009DB675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8AC5E719F857ED009DB675 /* My2DAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My2DAnimationTests.m; sourceTree = "<group>"; };
+		8B8AC5F419F85A34009DB675 /* My2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = My2DView.h; sourceTree = "<group>"; };
+		8B8AC5F519F85A34009DB675 /* My2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = My2DView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,9 @@
 		8B8AC5CA19F857ED009DB675 /* My2DAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				8B8AC5CF19F857ED009DB675 /* AppDelegate.h */,
-				8B8AC5D019F857ED009DB675 /* AppDelegate.m */,
-				8B8AC5D219F857ED009DB675 /* ViewController.h */,
-				8B8AC5D319F857ED009DB675 /* ViewController.m */,
-				8B8AC5D519F857ED009DB675 /* Main.storyboard */,
-				8B8AC5D819F857ED009DB675 /* Images.xcassets */,
-				8B8AC5DA19F857ED009DB675 /* LaunchScreen.xib */,
+				8B8AC5F319F85801009DB675 /* Model */,
+				8B8AC5F219F857FC009DB675 /* View */,
+				8B8AC5F119F857F4009DB675 /* Controller */,
 				8B8AC5CB19F857ED009DB675 /* Supporting Files */,
 			);
 			path = My2DAnimation;
@@ -117,6 +116,36 @@
 				8B8AC5E619F857ED009DB675 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B8AC5F119F857F4009DB675 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B8AC5CF19F857ED009DB675 /* AppDelegate.h */,
+				8B8AC5D019F857ED009DB675 /* AppDelegate.m */,
+				8B8AC5D219F857ED009DB675 /* ViewController.h */,
+				8B8AC5D319F857ED009DB675 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8B8AC5F219F857FC009DB675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B8AC5D519F857ED009DB675 /* Main.storyboard */,
+				8B8AC5D819F857ED009DB675 /* Images.xcassets */,
+				8B8AC5DA19F857ED009DB675 /* LaunchScreen.xib */,
+				8B8AC5F419F85A34009DB675 /* My2DView.h */,
+				8B8AC5F519F85A34009DB675 /* My2DView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8B8AC5F319F85801009DB675 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8AC5F619F85A34009DB675 /* My2DView.m in Sources */,
 				8B8AC5D419F857ED009DB675 /* ViewController.m in Sources */,
 				8B8AC5D119F857ED009DB675 /* AppDelegate.m in Sources */,
 				8B8AC5CE19F857ED009DB675 /* main.m in Sources */,
