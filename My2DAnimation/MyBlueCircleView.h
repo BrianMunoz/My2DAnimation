@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface My2DView : UIView
+@interface MyBlueCircleView : UIView
 
 @end

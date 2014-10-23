@@ -35,7 +35,7 @@
      UIViewAnimationOptionRepeat
                      animations:^{
                          self.otherViewToAnimate.center = CGPointMake(0.0f, 0);
-                         self.otherViewToAnimate.alpha = 0.0f;
+                         self.otherViewToAnimate.alpha = 1.0f;
                      }
                      completion:^(BOOL finished) {
                      }];
@@ -53,6 +53,7 @@
                      completion:^(BOOL finished) {
                      }];
 }
+
 
 - (void)didReceiveMemoryWarning
 {

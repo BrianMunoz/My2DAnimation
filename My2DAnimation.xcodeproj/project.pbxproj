@@ -14,7 +14,8 @@
 		8B8AC5D919F857ED009DB675 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8AC5D819F857ED009DB675 /* Images.xcassets */; };
 		8B8AC5DC19F857ED009DB675 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8AC5DA19F857ED009DB675 /* LaunchScreen.xib */; };
 		8B8AC5E819F857ED009DB675 /* My2DAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC5E719F857ED009DB675 /* My2DAnimationTests.m */; };
-		8B8AC5F619F85A34009DB675 /* My2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC5F519F85A34009DB675 /* My2DView.m */; };
+		8B8AC5F619F85A34009DB675 /* MyBlueCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8AC5F519F85A34009DB675 /* MyBlueCircleView.m */; };
+		8BB49E8619F94D7E00ECDB36 /* MyRedCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB49E8519F94D7E00ECDB36 /* MyRedCircleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,10 @@
 		8B8AC5E119F857ED009DB675 /* My2DAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My2DAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8AC5E619F857ED009DB675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8AC5E719F857ED009DB675 /* My2DAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My2DAnimationTests.m; sourceTree = "<group>"; };
-		8B8AC5F419F85A34009DB675 /* My2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = My2DView.h; sourceTree = "<group>"; };
-		8B8AC5F519F85A34009DB675 /* My2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = My2DView.m; sourceTree = "<group>"; };
+		8B8AC5F419F85A34009DB675 /* MyBlueCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlueCircleView.h; sourceTree = "<group>"; };
+		8B8AC5F519F85A34009DB675 /* MyBlueCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBlueCircleView.m; sourceTree = "<group>"; };
+		8BB49E8419F94D7E00ECDB36 /* MyRedCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRedCircleView.h; sourceTree = "<group>"; };
+		8BB49E8519F94D7E00ECDB36 /* MyRedCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRedCircleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +138,10 @@
 				8B8AC5D519F857ED009DB675 /* Main.storyboard */,
 				8B8AC5D819F857ED009DB675 /* Images.xcassets */,
 				8B8AC5DA19F857ED009DB675 /* LaunchScreen.xib */,
-				8B8AC5F419F85A34009DB675 /* My2DView.h */,
-				8B8AC5F519F85A34009DB675 /* My2DView.m */,
+				8B8AC5F419F85A34009DB675 /* MyBlueCircleView.h */,
+				8B8AC5F519F85A34009DB675 /* MyBlueCircleView.m */,
+				8BB49E8419F94D7E00ECDB36 /* MyRedCircleView.h */,
+				8BB49E8519F94D7E00ECDB36 /* MyRedCircleView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -248,10 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8AC5F619F85A34009DB675 /* My2DView.m in Sources */,
+				8B8AC5F619F85A34009DB675 /* MyBlueCircleView.m in Sources */,
 				8B8AC5D419F857ED009DB675 /* ViewController.m in Sources */,
 				8B8AC5D119F857ED009DB675 /* AppDelegate.m in Sources */,
 				8B8AC5CE19F857ED009DB675 /* main.m in Sources */,
+				8BB49E8619F94D7E00ECDB36 /* MyRedCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +450,7 @@
 				8B8AC5ED19F857ED009DB675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B8AC5EE19F857ED009DB675 /* Build configuration list for PBXNativeTarget "My2DAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				8B8AC5F019F857ED009DB675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
